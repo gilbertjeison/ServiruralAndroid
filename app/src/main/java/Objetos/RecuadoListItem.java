@@ -26,7 +26,7 @@ public class RecuadoListItem {
     private String nombre_cobrador;
     private int dia_corte;
     private int num_lineas;
-    private int producto;
+//    private int producto;
     private String dias_cobro;
     private long codigo_venta;
     private boolean cobrado;
@@ -125,9 +125,9 @@ public class RecuadoListItem {
         return minutos;
     }
 
-    public void setMinutos(long minutos) {
-        this.minutos = minutos;
-    }
+//    public void setMinutos(long minutos) {
+//        this.minutos = minutos;
+//    }
 
     public boolean isCobrado() {
         return cobrado;
@@ -141,17 +141,17 @@ public class RecuadoListItem {
         return num_lineas;
     }
 
-    public void setNum_lineas(int num_lineas) {
-        this.num_lineas = num_lineas;
-    }
+//    public void setNum_lineas(int num_lineas) {
+//        this.num_lineas = num_lineas;
+//    }
 
-    public int getImeagen() {
-        return imeagen;
-    }
-
-    public void setImeagen(int imeagen) {
-        this.imeagen = imeagen;
-    }
+//    public int getImeagen() {
+//        return imeagen;
+//    }
+//
+//    public void setImeagen(int imeagen) {
+//        this.imeagen = imeagen;
+//    }
 
     public long getCodigo() {
         return codigo;
@@ -165,9 +165,9 @@ public class RecuadoListItem {
         return codigo_cliente;
     }
 
-    public void setCodigo_cliente(long codigo_cliente) {
-        this.codigo_cliente = codigo_cliente;
-    }
+//    public void setCodigo_cliente(long codigo_cliente) {
+//        this.codigo_cliente = codigo_cliente;
+//    }
 
     public String getNombre() {
         return nombre;
@@ -205,49 +205,49 @@ public class RecuadoListItem {
         return saldo_linea;
     }
 
-    public void setSaldo_linea(long saldo_linea) {
-        this.saldo_linea = saldo_linea;
-    }
+//    public void setSaldo_linea(long saldo_linea) {
+//        this.saldo_linea = saldo_linea;
+//    }
 
     public long getRecibo_venta() {
         return recibo_venta;
     }
 
-    public void setRecibo_venta(long recibo_venta) {
-        this.recibo_venta = recibo_venta;
-    }
+//    public void setRecibo_venta(long recibo_venta) {
+//        this.recibo_venta = recibo_venta;
+//    }
 
     public String getFecha_venta() {
         return fecha_venta;
     }
 
-    public void setFecha_venta(String fecha_venta) {
-        this.fecha_venta = fecha_venta;
-    }
+//    public void setFecha_venta(String fecha_venta) {
+//        this.fecha_venta = fecha_venta;
+//    }
 
     public long getCodigo_vendedor() {
         return codigo_vendedor;
     }
 
-    public void setCodigo_vendedor(long codigo_vendedor) {
-        this.codigo_vendedor = codigo_vendedor;
-    }
+//    public void setCodigo_vendedor(long codigo_vendedor) {
+//        this.codigo_vendedor = codigo_vendedor;
+//    }
 
     public long getCodigo_cobrador() {
         return codigo_cobrador;
     }
 
-    public void setCodigo_cobrador(long codigo_cobrador) {
-        this.codigo_cobrador = codigo_cobrador;
-    }
+//    public void setCodigo_cobrador(long codigo_cobrador) {
+//        this.codigo_cobrador = codigo_cobrador;
+//    }
 
     public long getPrecio_venta() {
         return precio_venta;
     }
 
-    public void setPrecio_venta(long precio_venta) {
-        this.precio_venta = precio_venta;
-    }
+//    public void setPrecio_venta(long precio_venta) {
+//        this.precio_venta = precio_venta;
+//    }
 
     public String getObservacion_recaudo() {
         return observacion_recaudo;
@@ -269,25 +269,25 @@ public class RecuadoListItem {
         return recibo_generado;
     }
 
-    public void setRecibo_generado(long recibo_generado) {
-        this.recibo_generado = recibo_generado;
-    }
+//    public void setRecibo_generado(long recibo_generado) {
+//        this.recibo_generado = recibo_generado;
+//    }
 
     public String getFecha_cobro() {
         return fecha_cobro;
     }
 
-    public void setFecha_cobro(String fecha_cobro) {
-        this.fecha_cobro = fecha_cobro;
-    }
+//    public void setFecha_cobro(String fecha_cobro) {
+//        this.fecha_cobro = fecha_cobro;
+//    }
 
     public String getFecha_export() {
         return fecha_export;
     }
 
-    public void setFecha_export(String fecha_export) {
-        this.fecha_export = fecha_export;
-    }
+//    public void setFecha_export(String fecha_export) {
+//        this.fecha_export = fecha_export;
+//    } tony
 
     public String getNombre_vendedor() {
         return nombre_vendedor;
@@ -309,9 +309,9 @@ public class RecuadoListItem {
         return dia_corte;
     }
 
-    public void setDia_corte(int dia_corte) {
-        this.dia_corte = dia_corte;
-    }
+//    public void setDia_corte(int dia_corte) {
+//        this.dia_corte = dia_corte;
+//    }
 
 
     public long getCodigo_venta() {
