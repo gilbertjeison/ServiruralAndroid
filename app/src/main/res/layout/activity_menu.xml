@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.meysi.desarrollo.servirural_android.MenuActivity"
+    android:id="@+id/cuerpo"
+    android:background="@drawable/cuadrado_b">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botones"
+        android:layout_marginTop="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/radio481"
+        android:contentDescription="imagena"
+        android:layout_toEndOf="@+id/toolbar"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8"
+        android:layout_toRightOf="@+id/toolbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:src="@drawable/city"
+        android:contentDescription="imagenn"
+        android:layout_alignTop="@+id/botones"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:src="@drawable/logo_m"
+        android:contentDescription="logoa"
+        android:layout_below="@+id/imageView5"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView8"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entrega"
+        android:id="@+id/btnLineas"
+        android:layout_gravity="right"
+        android:background="@drawable/button_pressed"
+        android:paddingLeft="10dp"        android:paddingRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView8"
+        android:layout_toRightOf="@+id/botones"
+        android:layout_toEndOf="@+id/botones" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recarga"
+        android:id="@+id/btnRecargas"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/button_pressed"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnLineas"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reposicion"
+        android:id="@+id/btnSoat"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/button_pressed"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnRecargas"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/licencias"
+        android:id="@+id/btnLic"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/button_pressed"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnSoat"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transacciones"
+        android:id="@+id/btnTransa"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/button_pressed"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnLic"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

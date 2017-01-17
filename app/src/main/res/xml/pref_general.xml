@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="chkImpresion"
+        android:icon="@drawable/ic_action_print"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" />
+
+   <Preference android:title="@string/pref_title_system_sync_settings"
+        android:dependency="chkImpresion"
+        android:key="prfFijarImpresora"
+        android:icon="@drawable/ic_print_default"
+        android:summary="@string/pref_buscar_imp"/>
+
+    <Preference
+        android:title="@string/pref_mensajero"
+        android:key="prfMensajero"
+        android:summary="@string/pref_mensajero_summary"
+        android:icon="@drawable/ic_action_person">
+    </Preference>
+</PreferenceScreen>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meysi.desarrollo.servirural_android">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/radio48"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LogoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_logo"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" />
+        <activity
+            android:name=".RecaudosActivity"
+            android:label="@string/title_activity_recaudos" />
+        <activity
+            android:name=".ListRecaudosActivity"
+            android:label="@string/title_activity_list_recaudos">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".lineas"
+            android:label="@string/title_activity_lineas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_linea"
+            android:label="@string/title_activity_activity_linea" />
+        <activity
+            android:name=".venta"
+            android:label="@string/title_activity_venta" />
+        <activity
+            android:name=".Configuracion"
+            android:label="@string/title_activity_configuracion" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".RecuadoSoatList"
+            android:label="@string/title_activity_recuado_soat_list"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LRecaudoSoatActivity" />
+        <activity android:name=".RecaudoSoatActivity" />
+        <activity android:name=".ListRecaudoLicenciaActivity" />
+        <activity android:name=".RecaudoLicenciaActivity" />
+        <activity android:name=".ListRecargasActivity" />
+        <activity android:name=".RecargasActivity" />
+        <activity android:name=".TransaccionesActivity"></activity>
+    </application>
+
+</manifest>

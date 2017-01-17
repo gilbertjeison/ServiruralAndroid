@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:background="@drawable/list_back"
+            android:layout_marginBottom="10dp">
+            <ImageView android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/recaudo"
+                />
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:background="@drawable/list_back"
+            android:layout_marginBottom="10dp">
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/lect_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/cliente"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <!-- Row 3 with 2 columns -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/data_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/lin_nom_cliente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingTop="5dp"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/lin_dir_cliente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/lin_nom_cliente"
+                        android:layout_below="@+id/lin_nom_cliente"
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lin_barrio_cliente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/lin_nom_cliente"
+                        android:layout_below="@+id/lin_dir_cliente"
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:background="@drawable/list_back"
+            android:layout_marginBottom="10dp">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/titu_info_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/info_adicional"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+            </TableRow>
+
+            <!-- Row 3 with 2 columns -->
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+                <LinearLayout
+                    android:id="@+id/lay_data_adi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/lin_num_lineas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"/>
+
+                    <TextView
+                        android:id="@+id/lin_saldo_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:background="@drawable/list_back"
+            android:layout_marginBottom="10dp">
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/lin_obs_titu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/observacion"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lay_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent" >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtObservacionesR"
+                        android:text="..." />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:layout_marginBottom="10dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                tools:ignore="UselessParent" >
+
+                <LinearLayout
+                    android:id="@+id/lay_toma_lect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/lin_btn_pagar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="70dp"
+                        android:background="@drawable/button_pressed"
+                        android:text="@string/ver_detalles"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

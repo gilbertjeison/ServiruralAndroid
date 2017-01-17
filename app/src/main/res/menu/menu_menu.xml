@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.meysi.desarrollo.servirural_android.MenuActivity">
+
+    <item android:id="@+id/action_configuracion" android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+         />
+
+    <item android:id="@+id/action_exportar"
+        android:title="@string/action_exportar"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_sync_black_24dp"
+         />
+
+    <item android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+        android:orderInCategory="100"
+        android:icon="@drawable/abc_textfield_search_default_mtrl_alpha"
+         />
+
+    <item android:id="@+id/action_cerrar_sesion"
+        android:title="@string/action_cerrar_sesion"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_person"
+         />
+</menu>

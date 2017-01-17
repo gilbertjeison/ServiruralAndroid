@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meysi.desarrollo.servirural_android.LRecaudoSoatActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayoutSoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include layout="@layout/toolbar"
+            android:id="@+id/appbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/lvRecaudosSoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp">
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/cuadrado_v"
+        android:id="@+id/linearLayoutSoat"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_clientes"/>
+
+        <TextView
+            android:id="@+id/lblCantidadClientesSoat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/total_saldo"/>
+
+        <TextView
+            android:id="@+id/lblSaldoTotalClientesSoat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO HAY CLIENTES... !"
+        android:id="@+id/txtNoHayClientesSoat"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0c0102"
+        android:textSize="25dp"
+        android:textStyle="normal|bold|italic"
+        android:backgroundTint="#736d6d"
+        android:singleLine="true"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por favor contacta con administrador."
+        android:id="@+id/txtSubNoHayClientesSoat"
+        android:textColor="#0c0102"
+        android:textSize="12dp"
+        android:textStyle="normal|bold|italic"
+        android:backgroundTint="#736d6d"
+        android:singleLine="true"
+        android:typeface="serif"
+        android:layout_above="@+id/linearLayoutSoat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp" />
+
+
+</RelativeLayout>
